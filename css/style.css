@@ -17,15 +17,17 @@ body{
     background-color: yellow; */
 }
 .container{
+    margin: 0 auto;
     /* height: 100%; */
     display: grid;
     /* height: auto; */
+    padding: 2rem;
     gap: 5rem;
-    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     grid-template-rows: 1fr 1fr ;
     /* display: flex; */
     
-    width: 100%;
+    width: 80%;
     /* flex-wrap: wrap; */
     border: 1px solid black;
     /* justify-content: center; */
@@ -35,14 +37,22 @@ body{
 }
 
 .card{
-    position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 7.9rem 15.9rem 37rem 20rem;
     justify-content: center;
-    gap: 2.9rem;
-    height: 74rem;
-    /* width: 50%; */
     align-items: center;
-    flex-direction: column;
+    justify-items: center;
+    /* gap: 3rem; */
+    align-content: center;
+    /* position: relative; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 2.9rem; */
+    /* height: 73.5rem; */
+    /* width: 50%; */
+    /* align-items: center; */
+    /* flex-direction: column; */
     /* padding-bottom: 1rem; */
     /* padding: 1rem; */
     
@@ -52,11 +62,14 @@ body{
     background-color: white;
 }
 .card__title{
-    top: 0;
-    position: absolute;
-    text-align: center;
+   
+    /* display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
     /* height: 7rem; */
-    padding: 1.9rem 3rem 1rem 3rem;
+    /* padding: 1.9rem 3rem 1rem 3rem; */
+    height: 100%;
     border-radius: .9rem  .9rem 0 0;
     background-color: #C0D8FF;
     width: 100%;
@@ -70,7 +83,7 @@ h2 > strong{
 .infor p{
     font-size: 1.9rem;
 }
-.container__assinar,.card__price{
+.container__assinar,.card__price, .card__title{
     
     display: flex;
     align-items: center;
@@ -93,7 +106,7 @@ h2 > strong{
     /* background-color: green; */
     display: grid;
    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-   /* grid-template-rows: repeat(auto-fit, minmax(0, 1fr)); */
+   grid-template-rows: repeat(auto-fit, minmax(0, 3rem));
     
     /* grid-template-columns: 1fr 1fr 1fr; */
     align-items: center;
@@ -147,4 +160,26 @@ li i{
     color:blue;
     font-size: 1.6rem;
     text-decoration: underline;
+}
+
+@media screen and (max-width:700px){
+    .container{
+        background-color: red;
+        display: grid;
+        /* height: auto; */
+        padding: 2rem;
+        gap: 5rem;
+        grid-template-columns: repeat(auto-fit, minmax(30.90rem, 1fr));
+        grid-template-rows: 1fr 1fr ;
+    }
+    ul li{
+        font-size: 1.3rem;
+    }
+    .items ul{
+        overflow: auto;
+        border: 1px solid gray;
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(0, 6rem));
+        width: 30rem;
+    }
 }
