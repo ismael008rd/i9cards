@@ -9,15 +9,15 @@
     font-size: 62.5%;
 }
 body{
-    height: 100vh;
+    /* height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: yellow; */
 }
 .container{
-    height: 100vh;
+    /* height: 100%; */
     display: grid;
     /* height: auto; */
     gap: 5rem;
@@ -25,12 +25,12 @@ body{
     grid-template-rows: 1fr 1fr ;
     /* display: flex; */
     
-    width: 70%;
+    width: 100%;
     /* flex-wrap: wrap; */
     border: 1px solid black;
     /* justify-content: center; */
    /* align-items: center; */
-    /* background-color: rgb(183, 166, 166);*/
+    background-color: rgb(183, 166, 166);
    
 }
 
