@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    /* height: auto; */
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    grid-template-rows: 1fr 1fr ;
+    /* display: flex; */
+    
+    width: 70%;
+    /* flex-wrap: wrap; */
+    border: 1px solid black;
+    /* justify-content: center; */
+   /* align-items: center; */
+    /* background-color: rgb(183, 166, 166);*/
+   
+}
+
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 2.9rem;
+    height: 74rem;
+    /* width: 50%; */
+    align-items: center;
+    flex-direction: column;
+    /* padding-bottom: 1rem; */
+    /* padding: 1rem; */
+    
+    /* padding: 0 1.5rem 1.5rem 1.5rem; */
+    border-radius: .9rem;
+   
+    background-color: white;
+}
+.card__title{
+    top: 0;
+    position: absolute;
+    text-align: center;
+    /* height: 7rem; */
+    padding: 1.9rem 3rem 1rem 3rem;
+    border-radius: .9rem  .9rem 0 0;
+    background-color: #C0D8FF;
+    width: 100%;
+}
+.card__title h1{
+    font-size: 2.7rem;
+}
+h2 > strong{
+    font-size: 4.9rem;
+}
+.infor p{
+    font-size: 1.9rem;
+}
+.container__assinar,.card__price{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.card__price{
+    /* margin-top: 2.5rem; */
+}
+
+.items{
+  
+}
+.items ul{
+    /* border: 1px solid black; */
+    width: 37rem;
+
+    height: 37rem;
+    padding: 1.5rem;
+    /* background-color: green; */
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+   /* grid-template-rows: repeat(auto-fit, minmax(0, 1fr)); */
+    
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    justify-content: flex-end;
+    gap: .4rem;
+}
+.container__assinar{
+    width: 80%;
+    margin-bottom: .9rem;
+    padding: 1rem;
+    /* border: 1px solid yellow; */
+    gap: .5rem;
+    
+}
+
+.btn-assinar{
+    width: 100%;
+   
+}
+.btn-assinar button{
+    width: 100%;
+    padding: 1.7rem;
+    font-size: 2rem;
+    border-radius: .2rem;
+    color: white;
+    background-color: #9DBB30;
+    border: none;
+    outline: none;
+}
+.btn-assinar button:hover{
+    background-color: #6db51b;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    text-align: center;
+    padding: .6rem;
+    background-color: #EBFDFF;
+    font-size: 1.5rem;
+    position: relative;
+    
+}
+li i{
+    color: #27C92D;
+    position:absolute;
+    left: .3rem;
+}
+.comparative p{
+    color:blue;
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
