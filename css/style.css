@@ -9,7 +9,7 @@
     font-size: 62.5%;
 }
 body{
-    background-color: #46bdc5;
+    /* background-color: #46bdc5; */
     /* height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,6 +23,7 @@ body{
     display: grid;
     /* height: auto; */
     padding: 2rem;
+    justify-content: center;
     gap: 5rem;
     grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
     grid-template-rows: 1fr 1fr ;
@@ -43,7 +44,7 @@ body{
 .card{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 7.9rem 15.9rem 37rem 20rem;
+    grid-template-rows: 7.9rem 15.9rem 34rem 20rem;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -67,6 +68,7 @@ body{
 }
 
 .container__documentos{
+    margin-top: -6rem;
     padding-block: 1rem;
     width: 100%;
     /* background-color: black; */
@@ -91,7 +93,7 @@ h2 > strong{
     font-size: 7.9rem;
 }
 .infor p{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 .container__assinar,.card__price, .card__title,.items, .btn-assinar{
     
@@ -105,6 +107,7 @@ h2 > strong{
 }
 
 .items{
+    
     /* width: 40rem; */
     width: 100%;
     display: flex;
@@ -177,7 +180,7 @@ li i{
 
 @media screen and (max-width:450px) {
     body{
-        background-color: rgb(77, 54, 54);
+        /* background-color: rgb(77, 54, 54); */
         
     }
     .infor p{
