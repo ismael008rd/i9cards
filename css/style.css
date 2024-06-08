@@ -63,7 +63,7 @@ body{
     /* padding: 0 1.5rem 1.5rem 1.5rem; */
     border-radius: .9rem;
    
-    background-color: white;
+    background-color: #EBFDFF;
 }
 
 .container__documentos{
@@ -112,10 +112,8 @@ h2 > strong{
     justify-content: flex-start;
     /* background-color: aquamarine; */
     height: 25.9rem;
+    padding: .9rem;
 
-  /* border: 1px solid red; */
-  /* width: 100%; */
-  /* width:44rem; */
 }
 .items ul{
     width: 100%;
@@ -179,7 +177,7 @@ li i{
 
 @media screen and (max-width:450px) {
     body{
-        background-color: red;
+        background-color: rgb(77, 54, 54);
         
     }
     .infor p{
